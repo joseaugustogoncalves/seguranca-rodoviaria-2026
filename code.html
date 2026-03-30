@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#ffdad6",
+              "inverse-on-surface": "#313030",
+              "on-background": "#e5e2e1",
+              "tertiary": "#ffb876",
+              "on-secondary-container": "#4e2a00",
+              "tertiary-fixed-dim": "#ffb876",
+              "secondary-fixed": "#ffdcbf",
+              "on-tertiary": "#4b2800",
+              "on-primary-fixed-variant": "#004c6b",
+              "on-error": "#690005",
+              "secondary-fixed-dim": "#ffb874",
+              "secondary": "#ffb874",
+              "primary": "#82cfff",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-container-high": "#2a2a2a",
+              "on-primary-container": "#003e58",
+              "error-container": "#93000a",
+              "on-primary": "#00344b",
+              "on-primary-fixed": "#001e2d",
+              "on-tertiary-fixed-variant": "#6b3b00",
+              "outline-variant": "#3e4850",
+              "error": "#ffb4ab",
+              "primary-fixed": "#c6e7ff",
+              "primary-container": "#00aeef",
+              "inverse-primary": "#00658d",
+              "primary-fixed-dim": "#82cfff",
+              "on-tertiary-fixed": "#2d1600",
+              "surface-container": "#20201f",
+              "on-surface": "#e5e2e1",
+              "on-secondary-fixed-variant": "#6b3b00",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-fixed": "#ffdcc0",
+              "on-secondary-fixed": "#2d1600",
+              "outline": "#87929b",
+              "background": "#131313",
+              "surface-dim": "#131313",
+              "surface-container-highest": "#353535",
+              "surface-bright": "#393939",
+              "surface-variant": "#353535",
+              "surface-tint": "#82cfff",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-container": "#572f00",
+              "on-surface-variant": "#bdc8d1",
+              "on-secondary": "#4b2800",
+              "tertiary-container": "#ea8c21",
+              "secondary-container": "#e38403",
+              "surface": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(53, 53, 53, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(130, 207, 255, 0.4);
+        }
+        .video-container iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- Header Navigation -->
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Close-up of a Maqueen robot on a simulated road track with LED traffic signals, cinematic lighting, tech laboratory atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD78-8ByzjsGNLghLb2lAUqdL4V3T6-9OkuflTWiyX2NAyCpRbU0gpMGo_reQehJSOFGxY8wHyIYaqZ_i6VzBXdp5nLARhyQZKaLvUiOb8Fm-aTE1Y33-SYZHfxbmUEofymG3wSqWLqKyXHMTmXQKkkuwmQxcjsAvaho5Vm5Rg7EQ5L5oUsVLL3a9v9LTk3ILv6TIuMc3DPa_uTbGA08bOhUvUURfOob-T6X0_YENVlP2saEge1FsDmPi-qPOAKK4oxIqKUmeRy-J0V"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-24 w-full max-w-7xl">
+<div class="inline-block px-4 py-1 mb-6 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest font-label">
+                Robotics Lab 2026
+            </div>
+<h1 class="font-headline text-5xl md:text-8xl font-bold tracking-tight leading-[0.9] mb-6 max-w-4xl text-glow">
+                Segurança Rodoviária:<br/>
+<span class="text-primary">Micro:bit &amp; Maqueen</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                Aprende a programar o futuro da mobilidade autónoma através de simulações reais e lógica computacional avançada.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold rounded-xl flex items-center gap-2 hover:shadow-[0_0_20px_rgba(130,207,255,0.3)] transition-all" href="#videos">
+                    Começar Aprendizagem
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Asymmetric Decorative Element -->
+<div class="absolute bottom-12 right-12 hidden lg:block">
+<div class="glass-panel p-6 rounded-2xl border border-outline-variant/15 w-64">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">sensors</span>
+<span class="text-xs font-bold font-label text-secondary uppercase tracking-widest">Live Sensor Data</span>
+</div>
+<div class="space-y-3">
+<div class="h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<div class="h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-1/3"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant/60 font-mono">X: 102.4 | Y: 45.1 | Z: 0.0</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Video Grid Section -->
+<section class="py-24 px-8 md:px-16 bg-surface" id="videos">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-4">Módulos de Formação</h2>
+<div class="w-24 h-1 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Video Card 1 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="High-tech interface showing a digital traffic light simulation with glowing red, yellow, and green circles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5GXa1Ujegur6RjTZFCgWLXSt01r8aSJiyAjd-9clTwdfpFPlZbWru1X0cOdmM-A8PsKUKTdamobu5y1E3D_SxppADOWDoTYD-MLRKzhZW7_d7GfeJfKLdA9sPG3BxGyxx5o-JeKRG5zB71fC8F1BfoLY8DO761DNtt0RqHQKA8K2x5MgUyXh41Fy8ehAxuh7fMaxKNyH3pP8d4pQTUBlxKoZT9QzSVETywcsQ15NkKLJCKOQ1C303cl_HDcm4MftUKSqd--QqXldx"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 01</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Sinalética</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Semáforos</h3>
+<p class="text-on-surface-variant leading-relaxed">Aprende a respeitar os sinais luminosos através da programação de sensores de cor e temporizadores precisos.</p>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="Abstract visualization of a pedestrian crossing with neon blue lines and a stylized humanoid icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7uBB3jjF6B9r68cBj499L3lldLBsnii8sAT3juymWf6oq9JMin8vVlI9mYsmLjmH6XIcddXN4ChLKjfc9ds_v0jCWPKxIFKIGD2ElgRqqNBvkzYtOh33R8ISyTG0bjGisAe6cDlz7CIWW0Dc2_X0zUtriVe-4jrjPzt5A0I5bIWd8GZy93f55naanz8cZ0CL12wt1toCAL8DLDhhkrlWbV2FRzyuyIvx-C_i1x_NvNOWEEZvHdby7R7mq4zWd0_28oIQJSTuk4r2J"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 02</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Prioridade</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Passadeiras</h3>
+<p class="text-on-surface-variant leading-relaxed">Prioridade absoluta aos peões. Configura o seguidor de linha do Maqueen para paragens seguras em zonas de travessia.</p>
+</div>
+</div>
+<!-- Video Card 3 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="Futuristic speedometer UI showing digital numbers and a radial glow in primary blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqhqjfA_Q3kBMW9v5ojDzDWqNY4WDneJDkcSOGhOHMv6ZLYSEfcTwC7GdrwIV0b1o_sF__nPl1bK6rgJLNSzmd_78qZ3Q-bmIGTz0M7Ap69Iuiyb0xFTnSxw_OlyQRgxfolGeXhB_zPXEoArdJZaTs_R2KJTucdcUtHakYi6LYjsKW5AipC8C2zdxH53y7soeMHvHXzPhNALC0JXo9ueYcH3wUczBNt0ocdJxHYZRbrYsweJKXrI-RKULNbwUgmi2NXuzEj82E6t1"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 03</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Controlo</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Velocidade</h3>
+<p class="text-on-surface-variant leading-relaxed">Conduzir devagar dá mais tempo de reação. Implementa algoritmos de controlo de motor PWM para velocidade cruzeiro segura.</p>
+</div>
+</div>
+<!-- Video Card 4 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="Sonar wave visualization showing distance detection with ultrasound technology in a dark laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGsMXSOqxA-oj_vgqXBf42Sy2nZPpucgsJ7qHEp96OU76LYJHfO43IRXvoNaN2uAPNUpb1AWN_Yx9Ciiv0airNX3zCoSsi3grlH1wPD_sbdFeS4JjoEg5wx23cg0rJC42V8LlM9EyzCKkSc8Fu-1ysTY9hqwZHHY0fhxy-FTDoGwi6F4-M1Td2P87A3EdObq37tUSIHHrx-TNds_XfGaVrANxsS43wihZMfIxgZnwrwJ-G0M8B2JiTAKKmHs0Wfejx0RlEFpPsbFNJ"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 04</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Segurança</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Obstáculos</h3>
+<p class="text-on-surface-variant leading-relaxed">Estar sempre atento a perigos inesperados. Utiliza o sensor de ultra-sons para deteção de colisão e travagem de emergência.</p>
+</div>
+</div>
+<!-- Video Card 5 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="Technical schematic of a road intersection with logic flow diagrams and hex-grid overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLKR_JNOCQ8mTlocM4oNn4VBxrOFfKcNZy2Xn-1_IN0Sx3ju2RA2YJruYviT1_YvG38e4wGZBfTAmAAV0B3NP8WNcdxAdVTjshDNsBg0K5qxufMm1kGJVp7Sn4axHASJ-tIAogxlO7FHKIO8dUKy2o5SVc6TPuipHpPLv5K9Wq1JU2-0rem2um649mcmPVkogMD9ouf-1s3YQ2WNO6TCM-Ncc2K-8TVYP0RDcN-XNh0YF1-ND1UQBxL8dQg4_rrOAp92lEkjYEW4YW"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 05</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Legislação</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Regras Gerais</h3>
+<p class="text-on-surface-variant leading-relaxed">STOP, ceder passagem e atenção redobrada. Traduz o código da estrada para lógica de programação 'If-Then-Else'.</p>
+</div>
+</div>
+<!-- Video Card 6 -->
+<div class="group surface-container rounded-xl overflow-hidden hover:bg-surface-container-high transition-colors duration-300">
+<div class="video-container relative">
+<img class="w-full aspect-video object-cover" data-alt="Stylized warning icon of a mobile phone with a slash through it, glowing in safety orange on a dark metallic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8e5sLkA9ji9qmSuX_KVY00MCscOGSsQCXqzcAvca34BnnnhEPyV3KABiymoJjKhXlu0I43W_pNfTATCWC_3WvnHPphb82I7HjIRP0dzAonZVIzRaTHa7xLPQG8bFy82pGSm15_Gz6N3tv98WTeb28cFsPD3IW_6jghrBJ5zu9OIOWrxxTjOGxogoxA7g9GvNI1vXYh565aGqXOdmWma9sSFOOHwqlaEngDacgfZEzyci7YoMwXJF4Q9TypbI11IWruUMwWjpQ4e3t"/>
+<div class="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="text-secondary font-label text-xs font-bold tracking-tighter uppercase">Módulo 06</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label text-xs uppercase">Consciencialização</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-3">Telemóvel</h3>
+<p class="text-on-surface-variant leading-relaxed">Evita distrações fatais ao conduzir. Uma simulação de como milissegundos de distração afetam o processamento robótico.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lab Callout -->
+<section class="py-24 px-8 bg-surface-container-low border-t border-outline-variant/10">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-6xl text-secondary mb-6 block">smart_toy</span>
+<h2 class="font-headline text-3xl md:text-5xl font-bold mb-6 italic">"A melhor forma de prever o futuro é programá-lo."</h2>
+<div class="inline-flex gap-8 items-center mt-8 p-6 glass-panel rounded-2xl border border-outline-variant/10">
+<div class="text-left">
+<p class="text-primary font-bold text-xl leading-none">12+</p>
+<p class="text-[10px] uppercase font-label text-on-surface-variant/60 tracking-widest">Sensores Maqueen</p>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="text-left">
+<p class="text-primary font-bold text-xl leading-none">Micro:bit</p>
+<p class="text-[10px] uppercase font-label text-on-surface-variant/60 tracking-widest">V2 Processing</p>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="text-left">
+<p class="text-primary font-bold text-xl leading-none">6</p>
+<p class="text-[10px] uppercase font-label text-on-surface-variant/60 tracking-widest">Missões Críticas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full py-12 px-8 border-t border-[#353535]/15">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-lg font-bold text-[#82CFFF] font-headline">Circuit Stream Robotics</div>
+<p class="font-['Inter'] text-sm text-[#E5E2E1]/60">© 2026 TGPSI</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+</div>
+<div class="flex gap-4">
+</div>
+</div>
+</footer>
+</body></html>
